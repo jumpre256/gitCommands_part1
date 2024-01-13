@@ -1,0 +1,22 @@
+To reset to a previous commit savestate of a project using git version control, use these three commands:
+
+Command #1:
+git reset --hard <hashCode>
+
+Command #2: "to see what will be deleted by resetting to a previous commit, does not do any actually deleting of files yet"
+git clean -nfd
+
+Command #3:
+git clean -f -d
+
+
+Example:
+INPUT> git reset --hard 6febb5ab49d50558531969f7f1898d34e9a69739
+OUTPUT> HEAD is now at 6febb5a better syntax for collideRects method
+INPUT> git clean -nfd
+[OUTPUT_NOT_INCLUDED: "but this command does give terminal output]
+INPUT> git clean -f -d
+OUTPUT: removing SnakeSegment.gd
+  removing SnakeSegment.tscn
+  removing SnakeSegmentRect.gd
+TERMINAL_SESSION_END;

@@ -1,0 +1,17 @@
+#Initializing a project to put it on an online git repository:
+
+1. git init
+2. git remote add origin <URL/to/git/file.git>
+
+3.*1. git push origin main
+3.*2. git push -u -f origin main
+
+
+#Cloning a git repository from the internet:
+
+1. git clone <URL/to/git/file.git>
+
+
+#Pulling from git repository from the internet:
+
+1. git pull origin main
